@@ -15,11 +15,10 @@ include 'includes/header.php';
             }
         ?>  
         <div class="editCaixaValor">
-    <h3>Digite o valor adicionado ao caixa</h3>
-    <h1><input name="novaRenda" required type="text" placeholder="R$ <?=$renda?>"></h1>
+    <h3>Digite o valor retirado do caixa</h3>
+    <h1><input name="novaRenda" required type="text" id="valor" onKeyup="mascaraValor()" placeholder="R$ <?=$renda?>"></h1>
     <h6><input name="motivo" required type="text" placeholder="Insira uma descrição rapida para essa transação"></h6>
 </div>
-<p style="text-align: center; font-weight: 600;">Por favor, colocar apenas números, e usar .(ponto) em vez de ,(vírgula) !!!</p>
 <div class="editCaixabtn">
 <button type="submit" name="atualizar">Atualizar</button>
 </div>
@@ -27,7 +26,8 @@ include 'includes/header.php';
 <?php
 
     if (isset($_POST['atualizar'])){
-    $novaRenda = $_POST['novaRenda'];
+    $novaRenda = preg_replace("/[^0-9,]+/i","",$_POST["novaRenda"]);
+    $novaRenda= str_replace(",",".",$novaRenda);
     $motivo = $_POST['motivo'];
 
     if($novaRenda > $renda){

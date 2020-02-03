@@ -32,13 +32,14 @@ include 'includes/header.php';
             </div>
             <div class="form-group col-md-3">
             <label>CEP</label>
-            <input type="text" class="form-control form-control-sm" name="cepfornecedor" value=<?=$linha["cep"]?> required>
+            <input type="text" class="form-control form-control-sm" id="cep" name="cepfornecedor" value=<?=$linha["cep"]?> size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" required >
             </div>
             </div>
             <div class="form-row" >
             <div class="form-group col-md-5">
             <label>Endereço</label>
-            <input type="text" class="form-control form-control-sm" name="enderecofornecedor" value=<?=$linha["endereco"]?> required>
+            <input type="text" id="rua" class="form-control form-control-sm" name="enderecofornecedor" value=<?=$linha["endereco"]?> required>
             </div>
             <div class="form-group col-md-2">
             <label>Número</label>
@@ -46,11 +47,11 @@ include 'includes/header.php';
             </div>
             <div class="form-group col-md-3">
             <label>Cidade</label>
-            <input type="text" class="form-control form-control-sm" name="cidadefornecedor" value=<?=$linha["cidade"]?> required>
+            <input type="text" id="cidade" class="form-control form-control-sm" name="cidadefornecedor" value=<?=$linha["cidade"]?> required>
             </div>            
             <div class="form-group col-md-3">
             <label>Bairro</label>
-            <input type="text" class="form-control form-control-sm" name="bairrofornecedor" value=<?=$linha["bairro"]?> required>
+            <input type="text" id="bairro" class="form-control form-control-sm" name="bairrofornecedor" value=<?=$linha["bairro"]?> required>
             </div>
             <div class="form-group col-md-4">
             <label>Complemento</label>

@@ -70,7 +70,7 @@ include 'includes/header.php';
       <th scope="row"><?= $id ?></th>
       <td> <?= $nome ?> </td>
       <td> <?= $quantidade ?> </td>
-      <td> <?= $valor ?> </td>
+      <td> R$ <?=$nombre_format_francais = number_format($valor, 2, ',', ' ')?> </td>
       <td> <?= date('d/m/Y', strtotime($data)); ?> </td>
       <td><a href='editProduto.php?id=<?=$id?>'>Editar</a</td>
       <td><a href='php/delProduto.php?id=<?=$id?>'>Excluir</a></td>
