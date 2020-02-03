@@ -1,0 +1,345 @@
+/* universal */
+
+body{
+    font-family: Calibri;
+}
+body a:hover{
+    text-decoration: none;
+}
+.btn-primary{
+    border-color: transparent !important;
+}
+
+/* Header */
+.container{
+    margin-top: 30px;
+}
+.menu{
+    background-color: aliceblue;
+    font-weight: bold;
+    margin-top: -30px;
+}
+.menu .dropdown-item{
+    font-weight: bold;
+}
+/* conteudo da homePage */
+.linha{
+    border: 0.8px solid #000000;
+    margin-top: 90px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.grana{
+    display: flex;
+    justify-content: center;
+}
+.grana h1{
+    font-family: Calibri;
+    font-size: 80px;
+    line-height: 170px;
+    color: #000000;
+}
+.linha2{
+    border: 1px solid #000000;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.finalhome{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.finalhome .box{
+    background: #F0F8FF;
+    width: 40%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.finalhome .box h5{
+    margin: 25px;
+    color: #0075ff;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-top: 1px solid #0075ff;
+    border-bottom: 1px solid #0075ff;
+}
+
+.finalhomebtn{
+    display: flex;
+    justify-content: space-around;
+    height: 6vh;
+    margin-top: 10px;
+}
+.finalhomebtn button{
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* conteudo da pagina regVenda/regCompra */
+.pesquisa{
+    margin-top: 80px;
+    margin-right: 16%;
+    margin-left: 16%;
+    font-family: Calibri;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.pesquisa input{
+    background: #F0F8FF;
+    border-radius: 15px;
+    border-radius: 5px;
+    width: 200%;
+}
+.pesquisa button{
+    background: #3094EC;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}.pesquisa button:hover{
+    background: #F0F8FF;
+    color: #3094EC;
+}
+.itens{
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 30vh;
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: none;
+}
+.valor{
+    /* margin-right: 15%;
+    margin-left: 15%;
+    height: 18vh;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between; */
+}
+.valor form{
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 18vh;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.valor .pag{
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 26%;
+    text-align: center;
+}
+.valor .pag h2{
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Calibri;
+}
+.valor .pag h1{
+    font-size: 35px;
+    margin-top: 15px;
+    text-align: center;
+}
+.valor .pag input{
+    border: none;
+    background: transparent;
+    width: 80%;
+    text-align: center;
+}
+.fimpag{
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 4vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.fimpag button{
+    background: #F0F8FF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 40px;
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 30px;
+}.fimpag .btncancel{
+    margin-right: -25%;
+}
+
+.fimpag select{
+    width: 35%;
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+/* Páginas de extrato */
+.pesquisalista{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: Calibri;
+    display: flex;
+}
+.pesquisalistaleft{
+     width: 60%;
+}
+.pesquisalistaleft button{
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 18px;
+}
+.pesquisalistaright{
+    display: flex;
+    height: 40px;
+}
+.pesquisalistaright form{
+    display: flex;
+    height: 40px;
+}
+.pesquisalistaright input{
+    background: #F0F8FF;
+    border-radius: 8px;
+    height: 40px;
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+.pesquisalistaright button{
+    background: #3094EC;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+.pesquisalistaright button:hover{
+    background: #F0F8FF;
+    color: #3094EC;
+}
+.lista{
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.lista th, td{
+    color: #0075FF;
+    font-weight: 600 !important;
+}
+.lista table{
+    text-align: center;
+}
+
+/* Páginas de formulário */
+
+.voltar{
+    margin-top: 80px;
+    margin-right: 20%;
+    margin-left: 20%;  
+}
+.voltar button{
+    background: #F0F8FF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    color: #0075FF;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.cadastro{
+    margin-top: 15px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.cadastro label{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.cadastro input, textarea, select, option{
+    border-radius: 1px !important;
+    background-color: #F0F8FF !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1) !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+.cadastro button{
+    background: #3094EC;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+}.cadastro button:hover{
+    background: #F0F8FF;
+    color: #3094EC;
+}
+.cadastro .btn{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    margin-top: 10px;
+}
+/* Footer */
+.footer{
+    background-color: #F0F8FF;
+    height: 20vh;
+    margin-top: 60px;
+}
+.footer .adm{
+    display: flex;
+    justify-content: center;    
+}.footer .adm p{
+    margin-top: 30px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer .copy{
+    display: flex;
+    justify-content: center;
+}.footer .copy p{
+    margin-top: 30px;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
