@@ -54,9 +54,9 @@ echo '<div class="pesquisalistaleft">
       <td> <?= $cpf ?> </td>
       <td> <?=date('d/m/Y', strtotime($data)); ?> </td>
       <td><a href='editFuncionario.php?id=<?=$id?>'>Detalhe</a</td>
-      <?php if(isset($_SESSION['logadoAdm']))
-      echo '<td><a href="php/delFuncionario.php?id=<?=$id?>">Excluir</a></td>'
-      ?>
+      <?php if(isset($_SESSION['logadoAdm']))?>
+      <td><a href='php/delFuncionario.php?id=<?=$id?>'>Excluir</a></td>
+      <?php?>
     </tr>
            <?php }
           }else{
@@ -74,9 +74,9 @@ echo '<div class="pesquisalistaleft">
       <td> <?= $cpf ?> </td>
       <td> <?=date('d/m/Y', strtotime($data)); ?> </td>
       <td><a href='editFuncionario.php?id=<?=$id?>'>Detalhe</a</td>
-      <?php if(isset($_SESSION['logadoAdm']))
-      echo '<td><a href="php/delFuncionario.php?id=<?=$id?>">Excluir</a></td>'
-      ?>
+      <?php if(isset($_SESSION['logadoAdm']))?>
+      <td><a href='php/delFuncionario.php?id=<?=$id?>'>Excluir</a></td>
+      <?php?>
     </tr>
            <?php }}?>
            
