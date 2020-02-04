@@ -25,7 +25,7 @@ include 'includes/header.php';
       </div>
       <div class="form-group col-md-5">
         <label>Nome</label>
-        <input type="text" class="form-control form-control-sm" name="nomeproduto" value=<?=$linha["nome"]?> required>
+        <input type="text" maxlength="50" class="form-control form-control-sm" name="nomeproduto" value=<?=$linha["nome"]?> required>
       </div>
       <div class="form-group col-md-5">
       <label>Fornecedor</label>
@@ -66,7 +66,7 @@ include 'includes/header.php';
     <div class="form-row">
         <div class="form-group col-md-7">
           <label >Descrição</label>
-          <textarea class="form-control form-control-sm" name="descricaoproduto" required rows="3"><?=$linha["descricao"]?></textarea>
+          <textarea class="form-control form-control-sm" maxlength="100" name="descricaoproduto" required rows="3"><?=$linha["descricao"]?></textarea>
         </div>
         <div class="form-group col-md-3">
           <label>Valor</label>
@@ -74,7 +74,7 @@ include 'includes/header.php';
         </div>
         <div class="form-group col-md-2">
             <label>Quantidade</label>
-            <input type="number" class="form-control form-control-sm" name="quantidadeproduto" value=<?=$linha["quantidade"]?> required>
+            <input type="number" maxlength="3" class="form-control form-control-sm" name="quantidadeproduto" value=<?=$linha["quantidade"]?> required>
         </div>
       </div>
 

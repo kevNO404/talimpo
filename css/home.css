@@ -322,12 +322,12 @@ body a:hover{
 /* Footer */
 .footer{
     background-color: #F0F8FF;
-    height: 20vh;
-    margin-top: 60px;
+    height: 25vh;
+    margin-top: 20%;
 }
 .footer .adm{
     display: flex;
-    justify-content: center;    
+    justify-content: space-evenly;    
 }.footer .adm p{
     margin-top: 30px;
     color: black;
@@ -342,4 +342,53 @@ body a:hover{
     color: black;
     font-weight: 400;
     font-size: 18px;
+}
+/* Edição de renda do caixa */
+
+.editCaixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.editCaixaValor{
+    background: #F0F8FF;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    height: 130px;
+}
+.editCaixaValor input{
+    background: #F0F8FF;
+    border-radius: 15px;
+    color: black;
+    border: none;
+    text-align: center;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 600;
+}
+.editCaixa button{
+    background: #3094EC;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+}
+.editCaixabtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.editcaixareg{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.editcaixareg button{
+    font-size: 28px !important;
+    font-family: calibri !important;
+    font-weight: 600 !important;
 }

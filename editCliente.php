@@ -24,7 +24,7 @@ include 'includes/header.php';
             </div> 
             <div class="form-group col-md-6">
             <label>Nome</label>
-            <input type="text" value=<?=$linha["nome"]?> class="form-control form-control-sm" name="nomecliente" required>
+            <input type="text" maxlength="50" value=<?=$linha["nome"]?> class="form-control form-control-sm" name="nomecliente" required>
             </div>      
             <div class="form-group col-md-4">
             <label>CPF</label>

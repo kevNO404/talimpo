@@ -27,7 +27,7 @@
 
             $_SESSION['logadoAdm'] = $linha['nome'];
           }
-           header("Location: ../admPage/index.php");
+           header("Location: ../index.php");
           
         }else{
           echo"<script language='javascript' type='text/javascript'>alert('Nome e/ou senha incorretos');

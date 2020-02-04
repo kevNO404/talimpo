@@ -21,11 +21,11 @@ include 'includes/header.php';
 <form action= php/registroCompra.php method="post" >
 <div class="pag">
     <h2>Valor Total</h2>
-    <h1><input type="text" id="valortotal" name="valortotal" required ="calcular()" ></h1>
+    <h1><input type="text" maxlength="10" id="valortotal" name="valortotal" required ="calcular()" ></h1>
 </div>
 <div class="pag">
     <h2>Valor Pago</h2>
-    <h1><input type="text" id="valorpago" name="valorpago" required onblur="calcular()"></h1>
+    <h1><input type="text" maxlength="10" id="valorpago" name="valorpago" required onblur="calcular()"></h1>
 </div>
 <script>  
           function calcular(){
@@ -36,7 +36,7 @@ include 'includes/header.php';
         </script>
 <div class="pag">
     <h2>Troco</h2>
-    <h1><input type="text" id="troco" name="troco" required></h1>
+    <h1><input type="text" maxlength="10" id="troco" name="troco" required></h1>
 </div>
 
 </div>

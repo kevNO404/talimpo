@@ -1,5 +1,8 @@
 <?php
 include 'includes/header.php';
+if (empty($_SESSION['logadoAdm'])) {
+    echo"<script language='javascript' type='text/javascript'>alert('Você não possui acesso a essa página');window.location.href='index.php';</script>";
+}
 ?>
     <div class="voltar">
     <a href="listaFuncionarios.php"><button type="button" class="btn btn-primary btn-sm">Voltar</button></a>
@@ -10,11 +13,11 @@ include 'includes/header.php';
         <div class="form-row">
             <div class="form-group col-md-5">
             <label>Nome</label>
-            <input type="text" class="form-control form-control-sm" name="nomefuncionario" required>
+            <input type="text" maxlength="50" class="form-control form-control-sm" name="nomefuncionario" required>
             </div> 
             <div class="form-group col-md-3">
             <label>Senha</label>
-            <input type="password" class="form-control form-control-sm" name="senhafuncionario" required>
+            <input type="password" maxlength="18" class="form-control form-control-sm" name="senhafuncionario" required>
             </div>     
             <div class="form-group col-md-4">
             <label>CPF</label>
@@ -29,19 +32,19 @@ include 'includes/header.php';
             <div class="form-row" style="justify-content: space-between;">
             <div class="form-group col-md-5">
             <label>Endereço</label>
-            <input type="text" id="rua" size="60" class="form-control form-control-sm" name="enderecofuncionario" required>
+            <input type="text" maxlength="30" id="rua" size="60" class="form-control form-control-sm" name="enderecofuncionario" required>
             </div>
             <div class="form-group col-md-2">
             <label>Número</label>
-            <input type="text" class="form-control form-control-sm" name="numerofuncionario" required>
+            <input type="text" maxlength="8" class="form-control form-control-sm" name="numerofuncionario" required>
             </div>
             <div class="form-group col-md-3">
             <label>Cidade</label>
-            <input type="text" id="cidade" size="40" class="form-control form-control-sm" name="cidadefuncionario" required>
+            <input type="text" maxlength="30" id="cidade" size="40" class="form-control form-control-sm" name="cidadefuncionario" required>
             </div>            
             <div class="form-group col-md-3">
             <label>Bairro</label>
-            <input type="text" id="bairro" size="40" class="form-control form-control-sm" name="bairrofuncionario" required>
+            <input type="text" maxlength="30" id="bairro" size="40" class="form-control form-control-sm" name="bairrofuncionario" required>
             </div>
             <div class="btn form-group col-md-4">
             <button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>

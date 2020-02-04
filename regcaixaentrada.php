@@ -1,5 +1,8 @@
 <?php
 include 'includes/header.php';
+if (empty($_SESSION['logadoAdm'])) {
+  echo"<script language='javascript' type='text/javascript'>alert('Você não possui acesso a essa página');window.location.href='index.php';</script>";
+}
 ?>
 
 <div class="pesquisalista">

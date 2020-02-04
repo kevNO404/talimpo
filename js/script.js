@@ -7,6 +7,9 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#data").mask("99/99/9999");
 });
+$(document).ready(function(){
+    $("#doc").mask("99.999.999/9999-99");
+});
 
 function mascaraValor() {
     var elemento = document.getElementById('valor');

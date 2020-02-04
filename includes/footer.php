@@ -2,13 +2,25 @@
 </section>
 <div class="footer">
     <div class="adm">
-    <a href="php/logoff.php"><p>Sair de sua conta</p></a>
+    <?php  if(isset($_SESSION['logadoAdm']))
+    echo '<a href="editcaixareg.php" style="width: 20%"><p style="text-align: center;">Registrar alteração<br> do caixa</p></a>'
+    ?>
+
+    <a href="php/logoff.php" style="margin-top: 30px"><p>Sair da conta</p></a>
+
+    <?php if(isset($_SESSION['logadoAdm']))
+    echo '<a href="regcaixa.php" style="width: 20%"><p style="text-align: center;">Registros de alteração<br> do caixa</p></a>'
+    ?>
     </div>
     
     <div class="copy">
     <p>TudoLimpo &copy; 2020</p>
     </div>
 </div>
+
+
+
+
 <script>
 function focoForm(formInst, elementInst){
 					if (document.forms.length > 0){

@@ -10,7 +10,7 @@ include 'includes/header.php';
             <div class="form-row">
             <div class="form-group col-md-6">
             <label>Nome</label>
-            <input type="text" class="form-control form-control-sm" name="nomecliente" required>
+            <input type="text" maxlength="50" class="form-control form-control-sm" name="nomecliente" required>
             </div>      
             <div class="form-group col-md-6">
             <label>CPF</label>

@@ -11,7 +11,7 @@ include 'includes/header.php';
     <div class="form-row">
       <div class="form-group col-md-6">
         <label>Nome</label>
-        <input type="text" class="form-control form-control-sm" name="nomeproduto" required>
+        <input type="text" maxlength="50" class="form-control form-control-sm" name="nomeproduto" required>
       </div>
       <div class="form-group col-md-6">
       <label>Fornecedor</label>
@@ -38,7 +38,7 @@ include 'includes/header.php';
     <div class="form-row">
         <div class="form-group col-md-7">
           <label >Descrição</label>
-          <textarea class="form-control form-control-sm" name="descricaoproduto" required rows="3" required></textarea>
+          <textarea class="form-control form-control-sm" maxlength="100" name="descricaoproduto" required rows="3" required></textarea>
         </div>
         <div class="form-group col-md-3">
           <label>Valor</label>
@@ -46,7 +46,7 @@ include 'includes/header.php';
         </div>
         <div class="form-group col-md-2">
             <label>Quantidade</label>
-            <input type="number" class="form-control form-control-sm" name="quantidadeproduto" required>
+            <input type="number" maxlength="3" class="form-control form-control-sm" name="quantidadeproduto" required>
         </div>
       </div>
 
@@ -64,7 +64,7 @@ include 'includes/header.php';
          </div>
       <div class="form-group col-md-4">
           <label>Marca</label>
-          <input type="text" class="form-control form-control-sm" name="marcaproduto" required>
+          <input type="text" maxlength="30" class="form-control form-control-sm" name="marcaproduto" required>
          </div>
          <div class="btn form-group col-md-4">
          <button type="submit" class="btn btn-primary">Cadastrar</button>

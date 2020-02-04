@@ -4,6 +4,11 @@ include 'includes/header.php';
 
 <div class="pesquisalista">
 
+<?php if(isset($_SESSION['logadoAdm']))
+echo '<div class="pesquisalistaleft">
+    <a href="cadFuncionario.php"><button type="button" class="btn btn-primary btn-sm">Cadastrar Funcionário</button></a>
+</div>'
+?>
 
 <div class="pesquisalistaright">
 <form action= listaFuncionarios.php method="post">
@@ -22,7 +27,10 @@ include 'includes/header.php';
       <th scope="col">Nome</th>
       <th scope="col">CPF</th>
       <th scope="col">Data de Adição</th>
-      <th scope="col">Editar</th>
+      <th scope="col">Detalhes</th>
+      <?php if(isset($_SESSION['logadoAdm']))
+      echo '<th scope="col">Deletar</th>'
+      ?>
     </tr>
   </thead>
   <tbody>
@@ -45,7 +53,10 @@ include 'includes/header.php';
       <td> <?= $nome ?> </td>
       <td> <?= $cpf ?> </td>
       <td> <?=date('d/m/Y', strtotime($data)); ?> </td>
-      <td><a href='detalheFuncionario.php?id=<?=$id?>'>Detalhes</a</td>
+      <td><a href='editFuncionario.php?id=<?=$id?>'>Detalhe</a</td>
+      <?php if(isset($_SESSION['logadoAdm']))
+      echo '<td><a href="php/delFuncionario.php?id=<?=$id?>">Excluir</a></td>'
+      ?>
     </tr>
            <?php }
           }else{
@@ -62,7 +73,10 @@ include 'includes/header.php';
       <td> <?= $nome ?> </td>
       <td> <?= $cpf ?> </td>
       <td> <?=date('d/m/Y', strtotime($data)); ?> </td>
-      <td><a href='detalheFuncionario.php?id=<?=$id?>'>Detalhes</a</td>
+      <td><a href='editFuncionario.php?id=<?=$id?>'>Detalhe</a</td>
+      <?php if(isset($_SESSION['logadoAdm']))
+      echo '<td><a href="php/delFuncionario.php?id=<?=$id?>">Excluir</a></td>'
+      ?>
     </tr>
            <?php }}?>
            
