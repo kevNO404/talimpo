@@ -47,7 +47,6 @@ body a:hover{
 .finalhome{
     display: flex;
     justify-content: space-between;
-    height: 60vh;
     margin-top: 60px;
     margin-left: 10%;
     margin-right: 10%;
