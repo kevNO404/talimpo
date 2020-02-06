@@ -11,7 +11,7 @@ include 'includes/header.php';
     <div class="form-row">
       <div class="form-group col-md-6">
         <label>Nome</label>
-        <input type="text" maxlength="50" class="form-control form-control-sm" name="nomeproduto" required>
+        <input type="text" maxlength="30" class="form-control form-control-sm" name="nomeproduto" required>
       </div>
       <div class="form-group col-md-6">
       <label>Fornecedor</label>
@@ -42,7 +42,7 @@ include 'includes/header.php';
         </div>
         <div class="form-group col-md-3">
           <label>Valor</label>
-          <input type="text" class="form-control form-control-sm" id="valor" placeholder="R$0.000,00" onKeyup="mascaraValor()" name="valorproduto" required>
+          <input type="text" class="form-control form-control-sm" maxlenght="20" id="valor" placeholder="R$0.000,00" onKeyup="mascaraValor()" name="valorproduto" required>
         </div>
         <div class="form-group col-md-2">
             <label>Quantidade</label>
@@ -64,7 +64,7 @@ include 'includes/header.php';
          </div>
       <div class="form-group col-md-4">
           <label>Marca</label>
-          <input type="text" maxlength="30" class="form-control form-control-sm" name="marcaproduto" required>
+          <input type="text" maxlength="15" class="form-control form-control-sm" name="marcaproduto" required>
          </div>
          <div class="btn form-group col-md-4">
          <button type="submit" class="btn btn-primary">Cadastrar</button>

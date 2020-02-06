@@ -25,7 +25,7 @@ include 'includes/header.php';
       </div>
       <div class="form-group col-md-5">
         <label>Nome</label>
-        <input type="text" maxlength="50" class="form-control form-control-sm" name="nomeproduto" value=<?=$linha["nome"]?> required>
+        <input type="text" maxlength="30" class="form-control form-control-sm" name="nomeproduto" value=<?=$linha["nome"]?> required>
       </div>
       <div class="form-group col-md-5">
       <label>Fornecedor</label>
@@ -92,7 +92,7 @@ include 'includes/header.php';
          </div>
       <div class="form-group col-md-3">
           <label>Marca</label>
-          <input type="text" class="form-control form-control-sm" name="marcaproduto" value=<?=$linha["marca"]?> required>
+          <input type="text" maxlength="15" class="form-control form-control-sm" name="marcaproduto" value=<?=$linha["marca"]?> required>
          </div>
          <div class="btn form-group col-md-12">
          <button type="reset" class="btn btn-primary btn-sm" style="margin-right: 10px !important;">Resetar</button>
